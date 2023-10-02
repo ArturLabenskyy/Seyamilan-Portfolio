@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Bitter&family=Raleway&display=swap");
+
+:root {
+    --color-bg: #b7a78e;
+    --color-font: #60160d;
+    --color-secondary: #332f24;
+
+    --font-main: "Arimo", sans-serif;
+    --font-ru: "Arimo", sans-serif;
+    --font-he: "Bitter", serif;
+    --font-en: "Raleway", sans-serif;
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+.full-page {
+    height: 95vh;
+    background-color: var(--color-bg);
+}
