@@ -1,6 +1,30 @@
 import styled from "styled-components";
 
 const Wrapped = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+
+    ul {
+        width: 60%;
+        margin: 0;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    li {
+        font-family: var(--font-ru);
+        font-size: 30px;
+        text-align: center;
+        align-self: center;
+        width: 100%;
+    }
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
     }

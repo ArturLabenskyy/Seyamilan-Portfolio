@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Wrapped = styled.nav`
+const Wrapped = styled.div`
     height: 7vh;
     display: flex;
     flex-direction: row;
@@ -11,6 +11,7 @@ const Wrapped = styled.nav`
     font-family: var(--font-en);
     color: var(--color-font);
     padding-left: 0.7rem;
+    margin-bottom: 0;
 
     .nav-menu {
         width: 30rem;
@@ -25,7 +26,7 @@ const Wrapped = styled.nav`
     }
 
     .nav-menu ul li {
-        font: 35px 600;
+        font: 25px bold;
         font-family: var(--font-en);
     }
 
@@ -39,9 +40,15 @@ const Wrapped = styled.nav`
             font-size: 15px;
         }
 
-        .nav-menu-close {
+        .nav-menu {
+            width: 2rem;
             align-items: center;
             margin-right: 0.7rem;
+        }
+
+        .navbar-icon {
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -55,19 +62,6 @@ const Wrapped = styled.nav`
 
     //  Desktops + large screen
     @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-        /* .nav-menu {
-            width: 30rem;
-            height: 100%;
-        }
-
-        ul {
-            width: 100%;
-            margin-right: 1rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            list-style: none;
-        } */
     }
 
     // Extra large + TV screen

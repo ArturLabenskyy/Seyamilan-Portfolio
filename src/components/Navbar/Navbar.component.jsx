@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaGripLines } from "react-icons/fa";
+import { IoCloseSharp } from "react-icons/io5";
 
 import Wrapped from "./Navbar.styled";
 
@@ -31,8 +32,12 @@ const Navbar = () => {
             <h3 className="text-logo">@seyamilan Photo | Video</h3>
             {isSmallScreen ? (
                 <>
-                    <div className="nav-menu-close">
-                        <FaGripLines />
+                    <div className="nav-menu " onClick={toggleMenu}>
+                        {menuOpen ? (
+                            <IoCloseSharp className="navbar-icon" />
+                        ) : (
+                            <FaGripLines className="navbar-icon" />
+                        )}
                     </div>
                 </>
             ) : (
