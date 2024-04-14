@@ -6,7 +6,6 @@ import Wrapped from "./Navbar.styled";
 
 const Navbar = ({ isMenuOpen, toggleMenu }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
-    // const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 768px)");
@@ -22,10 +21,6 @@ const Navbar = ({ isMenuOpen, toggleMenu }) => {
             mediaQuery.removeListener(handleResize);
         };
     }, []);
-
-    // const toggleMenu = () => {
-    //     setMenuOpen(!isMenuOpen);
-    // };
 
     return (
         <Wrapped>

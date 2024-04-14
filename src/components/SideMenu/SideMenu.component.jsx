@@ -2,8 +2,10 @@ import React from "react";
 import Wrapped from "../SideMenu/SideMenu.styled";
 
 const SideMenu = ({ isMenuOpen }) => {
+    const isOpen = isMenuOpen;
+
     return (
-        <Wrapped isMenuOpen={isMenuOpen}>
+        <Wrapped isOpen={isOpen}>
             <ul>
                 <li>Обо Мне</li>
                 <li>Фото Съемка</li>
