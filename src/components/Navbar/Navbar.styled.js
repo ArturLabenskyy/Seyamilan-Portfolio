@@ -37,7 +37,7 @@ const Wrapped = styled.div`
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         h3 {
-            font-size: 15px;
+            font-size: 17px;
         }
 
         .nav-menu {
@@ -54,6 +54,20 @@ const Wrapped = styled.div`
 
     // iPad + Tablet screen
     @media only screen and (min-width: 481px) and (max-width: 768px) {
+        h3 {
+            font-size: 17px;
+        }
+
+        .nav-menu {
+            width: 2rem;
+            align-items: center;
+            margin-right: 0.7rem;
+        }
+
+        .navbar-icon {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     // Small screen + Laptop screen

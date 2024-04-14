@@ -4,9 +4,9 @@ import { IoCloseSharp } from "react-icons/io5";
 
 import Wrapped from "./Navbar.styled";
 
-const Navbar = () => {
+const Navbar = ({ isMenuOpen, toggleMenu }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
-    const [menuOpen, setMenuOpen] = useState(false);
+    // const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 768px)");
@@ -23,9 +23,9 @@ const Navbar = () => {
         };
     }, []);
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
+    // const toggleMenu = () => {
+    //     setMenuOpen(!isMenuOpen);
+    // };
 
     return (
         <Wrapped>
@@ -33,7 +33,7 @@ const Navbar = () => {
             {isSmallScreen ? (
                 <>
                     <div className="nav-menu " onClick={toggleMenu}>
-                        {menuOpen ? (
+                        {isMenuOpen ? (
                             <IoCloseSharp className="navbar-icon" />
                         ) : (
                             <FaGripLines className="navbar-icon" />
