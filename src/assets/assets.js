@@ -14,18 +14,21 @@ const items = [
         onDragStart={handleDragStart}
         role="presentation"
         className="photo-slide"
+        alt="image1"
     />,
     <img
         src={img2}
         onDragStart={handleDragStart}
         role="presentation"
         className="photo-slide"
+        alt="image2"
     />,
     <img
         src={img3}
         onDragStart={handleDragStart}
         role="presentation"
         className="photo-slide"
+        alt="image3"
     />,
 ];
 

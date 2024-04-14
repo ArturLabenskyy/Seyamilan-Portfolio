@@ -13,6 +13,14 @@ const Wrapped = styled.div`
         h3 {
             color: #f3f3f3;
         }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
     // iPad + Tablet screen
     @media only screen and (min-width: 481px) and (max-width: 768px) {
