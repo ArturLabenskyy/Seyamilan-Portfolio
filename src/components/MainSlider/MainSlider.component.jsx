@@ -2,11 +2,17 @@ import React from "react";
 
 import Wrapped from "./mainSlider.styled";
 
-import PhotoCard from "../PhotoCard/PhotoCard.component";
-import imgData from "../../assets/assets";
+import SlideCard from "../SlideCard/SlideCard.component";
+import items from "../../assets/assets";
 
 const MainSlider = () => {
-    return <Wrapped></Wrapped>;
+    return (
+        <Wrapped>
+            {items.map((item) => {
+                return <SlideCard item={item} />;
+            })}
+        </Wrapped>
+    );
 };
 
 export default MainSlider;

@@ -3,27 +3,30 @@ import img1 from "./1.jpg";
 import img2 from "./2.jpg";
 import img3 from "./3.jpg";
 
-const imgData = [
-    {
-        id: 0,
-        isImage: false,
-        context: vid,
-    },
-    {
-        id: 1,
-        isImage: true,
-        context: img1,
-    },
-    {
-        id: 2,
-        isImage: true,
-        context: img2,
-    },
-    {
-        id: 3,
-        isImage: true,
-        context: img3,
-    },
+const handleDragStart = (e) => e.preventDefault();
+const items = [
+    <video width="300px" height="800px" loop muted autoPlay>
+        <source src={vid} type="video/mp4" />
+        Ваш браузер не поддерживает видео.
+    </video>,
+    <img
+        src={img1}
+        onDragStart={handleDragStart}
+        role="presentation"
+        className="photo-slide"
+    />,
+    <img
+        src={img2}
+        onDragStart={handleDragStart}
+        role="presentation"
+        className="photo-slide"
+    />,
+    <img
+        src={img3}
+        onDragStart={handleDragStart}
+        role="presentation"
+        className="photo-slide"
+    />,
 ];
 
-export default imgData;
+export default items;
