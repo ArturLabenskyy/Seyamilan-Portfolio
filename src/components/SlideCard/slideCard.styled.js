@@ -17,6 +17,17 @@ const Wrapped = styled.div`
             width: 100%;
             height: 100%;
         }
+
+        .text-container {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 100px;
+            left: 60px;
+            font-family: var(--font-ru);
+            color: var(--color-font);
+            /* font-size: 20px; */
+        }
     }
     // iPad + Tablet screen
     @media only screen and (min-width: 481px) and (max-width: 768px) {

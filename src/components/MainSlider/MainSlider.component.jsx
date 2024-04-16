@@ -9,13 +9,7 @@ import items from "../../assets/assets";
 const MainSlider = () => {
     return (
         <Wrapped>
-            <Swiper
-                spaceBetween={10}
-                slidesPerView={1}
-                // onSlideChange={() => console.log("slide change")}
-                // onSwiper={(swiper) => console.log(swiper)}
-                className="swiper"
-            >
+            <Swiper spaceBetween={10} slidesPerView={1} className="swiper">
                 {items.map((item, index) => {
                     return (
                         <SwiperSlide key={index}>
