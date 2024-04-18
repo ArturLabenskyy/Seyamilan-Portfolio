@@ -34,6 +34,18 @@ const Wrapped = styled.div`
         border-bottom: solid 1px var(--color-secondary);
     }
 
+    .list-visible {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 2s linear, transform 1s ease-in-out;
+    }
+
+    .list-hidden {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         z-index: 999;
