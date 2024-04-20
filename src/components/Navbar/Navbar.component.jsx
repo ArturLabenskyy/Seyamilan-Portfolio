@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import { FaGripLines } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 
+import { useGlobalContext } from "../../context/globalContext";
+
 import Wrapped from "./Navbar.styled";
 
-const Navbar = ({ isMenuOpen, toggleMenu }) => {
+const Navbar = () => {
+    const { isMenuOpen, toggleMenu } = useGlobalContext();
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {

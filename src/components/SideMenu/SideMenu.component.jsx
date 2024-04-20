@@ -1,12 +1,13 @@
 import React from "react";
 import Wrapped from "../SideMenu/SideMenu.styled";
+import { useGlobalContext } from "../../context/globalContext";
 
-const SideMenu = ({ isMenuOpen }) => {
-    const isOpen = isMenuOpen;
+const SideMenu = () => {
+    const { isMenuOpen } = useGlobalContext();
 
     return (
-        <Wrapped isOpen={isOpen}>
-            <ul className={isOpen ? "list-visible" : "list-hidden"}>
+        <Wrapped isOpen={isMenuOpen}>
+            <ul className={isMenuOpen ? "list-visible" : "list-hidden"}>
                 <li>Обо Мне</li>
                 <li>Фото Съемка</li>
                 <li>Видео Съемка</li>

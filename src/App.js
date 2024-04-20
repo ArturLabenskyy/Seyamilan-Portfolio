@@ -1,22 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
+import { RouterProvider } from "react-router-dom";
 
-import Navbar from "./components/Navbar/Navbar.component";
-import SideMenu from "./components/SideMenu/SideMenu.component";
-import MainSlider from "./components/MainSlider/MainSlider.component";
+import { ContextProvider } from "./context/globalContext";
+
+import router from "./pages/router";
 
 function App() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-
     return (
-        <div className="full-page">
-            <Navbar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-            <SideMenu isMenuOpen={isMenuOpen} />
-            <MainSlider />
-        </div>
+        <ContextProvider>
+            <div className="full-page">
+                <RouterProvider router={router} />
+            </div>
+        </ContextProvider>
     );
 }
 
