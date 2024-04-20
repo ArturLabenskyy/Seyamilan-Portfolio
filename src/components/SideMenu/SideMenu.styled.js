@@ -5,7 +5,7 @@ const Wrapped = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
-    left: ${(props) => (props.isOpen ? "0" : "-100%")};
+    left: ${(props) => (props.isopen ? "0" : "-100%")};
     width: 100%;
     height: 92.9%;
     background-color: var(--color-bg);
