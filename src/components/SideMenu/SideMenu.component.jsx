@@ -9,8 +9,7 @@ const SideMenu = () => {
         <Wrapped isopen={isMenuOpen}>
             <ul className={isMenuOpen ? "list-visible" : "list-hidden"}>
                 <li>Обо Мне</li>
-                <li>Видео Съемка</li>
-                <li>Фото Съемка</li>
+                <li>Услуги</li>
                 <li>Контакты</li>
             </ul>
         </Wrapped>

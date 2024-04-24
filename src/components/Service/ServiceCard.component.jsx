@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Wrapped from "./ServiceCard.styled";
+import { GiClick } from "react-icons/gi";
 
 const ServiceCard = () => {
     const [leftContent, setLeftContent] = useState(false);
@@ -17,26 +18,36 @@ const ServiceCard = () => {
 
     return (
         <Wrapped className="container">
-            <div className="one" onClick={handleLeftClick}>
+            <div
+                className="one"
+                onClick={handleLeftClick}
+                onMouseEnter={handleLeftClick}
+            >
                 <div
                     className={
                         leftContent ? "content-visible" : "content-hidden"
                     }
                 >
-                    <h1>DESIGN</h1>
-                    <button>MORE INFO</button>
+                    <h1>ДИЗАЙН</h1>
+                    <a href="#design">
+                        <GiClick className="click-icon" />
+                    </a>
                 </div>
             </div>
-            <div className="two" onClick={handleRightClick}>
+            <div
+                className="two"
+                onClick={handleRightClick}
+                onMouseEnter={handleRightClick}
+            >
                 <div
                     className={
                         rightContent ? "content-visible" : "content-hidden"
                     }
                 >
-                    <h1>
-                        PHOTO<br></br>&&<br></br>VIDEO
-                    </h1>
-                    <button>MORE INFO</button>
+                    <h1>СЪЕМКА</h1>
+                    <a href="#photo">
+                        <GiClick className="click-icon" />
+                    </a>
                 </div>
             </div>
         </Wrapped>
