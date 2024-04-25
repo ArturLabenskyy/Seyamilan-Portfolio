@@ -1,7 +1,7 @@
-import vid from "./clip.mp4";
-import img1 from "./1.jpg";
-import img2 from "./2.jpg";
-import img3 from "./3.jpg";
+import vid from "../media/clip.mp4";
+import img1 from "../media/1.jpg";
+import img2 from "../media/2.jpg";
+import img3 from "../media/3.jpg";
 
 const handleDragStart = (e) => e.preventDefault();
 

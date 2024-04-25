@@ -4,7 +4,7 @@ import "swiper/css";
 
 import Wrapped from "./mainSlider.styled";
 import SlideCard from "../SlideCard/SlideCard.component";
-import items from "../../assets/assets";
+import items from "../../assets/data/assets";
 
 const MainSlider = () => {
     return (

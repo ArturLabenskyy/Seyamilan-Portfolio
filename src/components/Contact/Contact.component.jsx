@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Wrapped from "./Contact.styled";
-import tg from "../../assets/tg.gif";
-import ig from "../../assets/ig.jpg";
+import tg from "../../assets/media/tg.gif";
+import ig from "../../assets/media/ig.jpg";
 
 const Contact = () => {
     return (

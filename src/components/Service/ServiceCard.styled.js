@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import img1 from "../../assets/design.jpg";
-import img2 from "../../assets/photo.jpg";
+import img1 from "../../assets/media/design.jpg";
+import img2 from "../../assets/media/photo.jpg";
 
 const Wrapped = styled.div`
     width: 90%;
