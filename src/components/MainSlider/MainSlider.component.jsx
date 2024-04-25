@@ -9,7 +9,7 @@ import items from "../../assets/data/assets";
 const MainSlider = () => {
     return (
         <Wrapped>
-            <Swiper spaceBetween={10} slidesPerView={1} className="swiper">
+            <Swiper spaceBetween={10} slidesPerView={1.2} className="swiper">
                 {items.map((item, index) => {
                     return (
                         <SwiperSlide key={index}>
