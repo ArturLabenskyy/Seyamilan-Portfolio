@@ -8,26 +8,43 @@ const Wrapped = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        font-family: var(--font-main);
 
-        /* .container {
-            width: 100%;
+        .container {
+            width: 80%;
             height: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        } */
-
-        .container {
-            width: 90%;
-            height: 45%;
+            text-decoration: none;
+            color: var(--color-font);
         }
 
         img {
-            width: 100%;
-            height: 100%;
-            border-radius: 5%;
+            width: 60%;
+            height: 60%;
+        }
+
+        .tg-icon,
+        .ig-icon {
+            vertical-align: middle;
+        }
+
+        .tg-icon {
+            color: #0b6bb6;
+        }
+
+        .ig-icon {
+            color: #c13584;
+        }
+
+        h1 {
+            height: 10%;
+            margin: 0;
+            color: var(--font-main);
+            text-align: center;
         }
     }
 
