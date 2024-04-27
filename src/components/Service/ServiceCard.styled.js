@@ -20,7 +20,8 @@ const Wrapped = styled.div`
         justify-content: flex-end;
         height: 100%;
         width: 30%;
-        transition: width 1.5s ease-in-out;
+        transition: width 1.5s ease-in-out, filter 1.5s ease-in-out;
+        filter: grayscale(100%);
     }
 
     .one {
@@ -36,7 +37,8 @@ const Wrapped = styled.div`
     .two:hover {
         z-index: 500;
         width: 100%;
-        transition: width 1.5s ease-in-out;
+        transition: width 1.5s ease-in-out, filter 1.5s ease-in-out;
+        filter: none;
     }
 
     .one:hover {
@@ -56,7 +58,7 @@ const Wrapped = styled.div`
         align-items: center;
         justify-content: center;
         opacity: 1;
-        transition: opacity 1.5s linear 1s;
+        transition: opacity 1s linear 1s;
     }
 
     .content-hidden {
@@ -67,7 +69,7 @@ const Wrapped = styled.div`
         align-items: center;
         justify-content: center;
         opacity: 0;
-        transition: opacity 1s ease;
+        transition: opacity 1s linear 0s;
     }
 
     h1 {
