@@ -1,8 +1,6 @@
 import React from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
-import logo from "../../assets/media/logo.png";
-
 import Wrapped from "./Footer.styled";
 
 const Footer = () => {
