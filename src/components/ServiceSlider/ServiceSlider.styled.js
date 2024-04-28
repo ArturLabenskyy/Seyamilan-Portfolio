@@ -15,6 +15,14 @@ const Wrapped = styled.div`
             justify-content: center;
             align-items: center;
         }
+
+        .mySwiper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
     }
 
     // iPad + Tablet screen

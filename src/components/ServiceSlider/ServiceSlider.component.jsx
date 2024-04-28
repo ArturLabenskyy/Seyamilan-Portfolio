@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 import ServiceCard from "../ServiceCard/ServiceCard.component";
 import Wrapped from "./ServiceSlider.styled";
@@ -13,7 +14,7 @@ const ServiceSlider = ({ content }) => {
             <Swiper
                 direction={"vertical"}
                 spaceBetween={10}
-                slidesPerView={1.1}
+                slidesPerView={1}
                 className="mySwiper"
             >
                 {content.map((obj) => {

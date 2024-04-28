@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import Wrapped from "./ServiceCard.styled";
 import { GiClick } from "react-icons/gi";
 
 const ServiceCard = () => {
     const [leftContent, setLeftContent] = useState(false);
     const [rightContent, setRightContent] = useState(false);
+
+    const navigate = useNavigate();
 
     const handleLeftClick = () => {
         setLeftContent(true);
@@ -29,7 +33,12 @@ const ServiceCard = () => {
                     }
                 >
                     <h1>ДИЗАЙН</h1>
-                    <a href="#design">
+                    <a
+                        href="#design"
+                        onClick={() => {
+                            navigate("/services/design");
+                        }}
+                    >
                         <GiClick className="click-icon" />
                     </a>
                 </div>
@@ -45,7 +54,12 @@ const ServiceCard = () => {
                     }
                 >
                     <h1>СЪЕМКА</h1>
-                    <a href="#photo">
+                    <a
+                        href="/"
+                        onClick={() => {
+                            navigate("/services/shooting");
+                        }}
+                    >
                         <GiClick className="click-icon" />
                     </a>
                 </div>
