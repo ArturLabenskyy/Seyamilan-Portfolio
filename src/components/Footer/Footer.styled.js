@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 const Wrapped = styled.footer`
     height: 5%;
     display: flex;
@@ -37,6 +36,11 @@ const Wrapped = styled.footer`
 
     .footer-copyright {
         color: var(--color-font);
+    }
+
+    span {
+        color: var(--color-secondary);
+        font-size: 1.2rem;
     }
 
     // Mobile phone screen

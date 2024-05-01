@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { FaGripLines } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -9,6 +11,8 @@ import Wrapped from "./Navbar.styled";
 const Navbar = () => {
     const { isMenuOpen, toggleMenu } = useGlobalContext();
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 768px)");
@@ -27,7 +31,14 @@ const Navbar = () => {
 
     return (
         <Wrapped>
-            <h3 className="text-logo">@seyamilan Photo | Video | Design</h3>
+            <h3
+                className="text-logo"
+                onClick={() => {
+                    navigate("/");
+                }}
+            >
+                @seyamilan Photo | Video | Design
+            </h3>
             {isSmallScreen ? (
                 <>
                     <div className="nav-menu " onClick={toggleMenu}>

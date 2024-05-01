@@ -17,9 +17,9 @@ const ServiceSlider = ({ content }) => {
                 slidesPerView={1}
                 className="mySwiper"
             >
-                {content.map((obj) => {
+                {content.map((obj, index) => {
                     return (
-                        <SwiperSlide className="swiper-slide">
+                        <SwiperSlide className="swiper-slide" key={index}>
                             <ServiceCard content={obj} />
                         </SwiperSlide>
                     );

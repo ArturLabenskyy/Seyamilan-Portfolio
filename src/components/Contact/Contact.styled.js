@@ -4,7 +4,7 @@ const Wrapped = styled.div`
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         width: 100%;
-        height: 92vh;
+        height: 87vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -42,7 +42,7 @@ const Wrapped = styled.div`
 
         h1 {
             height: 10%;
-            margin: 0;
+            margin: 0.5rem;
             color: var(--font-main);
             text-align: center;
         }

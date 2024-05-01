@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Wrapped = styled.div`
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-        height: 92.8%;
+        height: 87.8%;
         display: flex;
         flex-direction: column;
         align-items: center;

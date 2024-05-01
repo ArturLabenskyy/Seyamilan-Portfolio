@@ -4,7 +4,7 @@ import img2 from "../../assets/media/photo.jpg";
 
 const Wrapped = styled.div`
     width: 90%;
-    height: 90%;
+    height: 84%;
     display: flex;
     flex-direction: row;
     justify-content: center;
