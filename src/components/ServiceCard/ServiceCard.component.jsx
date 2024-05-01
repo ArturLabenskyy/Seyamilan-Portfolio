@@ -24,13 +24,7 @@ const ServiceCard = ({ content }) => {
                     {content.isVideo
                         ? content.videos.map((video, index) => (
                               <SwiperSlide className="swiper-slide" key={index}>
-                                  <video
-                                      //   width="300px"
-                                      //   height="800px"
-                                      loop
-                                      muted
-                                      autoPlay
-                                  >
+                                  <video loop muted autoPlay>
                                       <source src={video} type="video/mp4" />
                                       Ваш браузер не поддерживает видео.
                                   </video>

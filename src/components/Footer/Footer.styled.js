@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const Wrapped = styled.footer`
-    height: 2%;
-    display: grid;
+    height: 5%;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     background: var(--color-bg);
     text-align: center;
     font-size: 1rem;
@@ -15,17 +16,16 @@ const Wrapped = styled.footer`
 
     .footer-socials {
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
         gap: 1rem;
-        margin-bottom: 4rem;
     }
 
     .footer-socials a {
         background-color: var(--color-bg);
         color: var(--color-font);
-        padding: 0.8rem;
         border-radius: 0.7rem;
-        display: flex;
         border: 1px solid transparent;
     }
 
@@ -39,11 +39,6 @@ const Wrapped = styled.footer`
         color: var(--color-font);
     }
 
-    .logo {
-        height: 100%;
-        width: 100%;
-    }
-
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         .permalinks {
@@ -51,9 +46,9 @@ const Wrapped = styled.footer`
             gap: 1rem;
         }
 
-        .footer-socials {
+        /* .footer-socials {
             margin-bottom: 10px;
-        }
+        } */
     }
 
     // iPad + Tablet screen

@@ -8,7 +8,7 @@ const Footer = () => {
         <Wrapped>
             <div className="footer-socials">
                 <a
-                    href="https://www.linkedin.com/in/artur-labenskyy"
+                    href="https://www.linkedin.com/in/labenskyy"
                     rel="noreferrer"
                     target="_blank"
                 >
@@ -22,9 +22,10 @@ const Footer = () => {
                     <BsGithub />
                 </a>
             </div>
-
             <div className="footer-copyright">
-                <small>&copy; Artur Labenskyy. All rights reserved, 2024</small>
+                <small>
+                    &copy; Powered by Ar2r. All rights reserved, 2024.
+                </small>
             </div>
         </Wrapped>
     );

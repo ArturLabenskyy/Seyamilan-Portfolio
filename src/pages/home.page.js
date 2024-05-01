@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar.component";
 import SideMenu from "../components/SideMenu/SideMenu.component";
 import MainSlider from "../components/MainSlider/MainSlider.component";
-// import Footer from "../components/Footer/Footer.component";
+import Footer from "../components/Footer/Footer.component";
 
 const HomePage = () => {
     return (
@@ -10,7 +10,7 @@ const HomePage = () => {
             <Navbar />
             <SideMenu />
             <MainSlider />
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 };
