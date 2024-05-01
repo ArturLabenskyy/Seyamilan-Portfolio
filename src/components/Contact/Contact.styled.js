@@ -13,7 +13,7 @@ const Wrapped = styled.div`
 
         .container {
             width: 80%;
-            height: 50%;
+            height: 40%;
             display: flex;
             flex-direction: column;
             align-items: center;

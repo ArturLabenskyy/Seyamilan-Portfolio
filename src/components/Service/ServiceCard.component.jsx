@@ -55,7 +55,7 @@ const ServiceCard = () => {
                 >
                     <h1>СЪЕМКА</h1>
                     <a
-                        href="/"
+                        href="#shooting"
                         onClick={() => {
                             navigate("/services/shooting");
                         }}

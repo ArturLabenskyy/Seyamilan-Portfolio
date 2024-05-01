@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <Wrapped>
-            <h3 className="text-logo">@seyamilan Photo | Video</h3>
+            <h3 className="text-logo">@seyamilan Photo | Video | Design</h3>
             {isSmallScreen ? (
                 <>
                     <div className="nav-menu " onClick={toggleMenu}>

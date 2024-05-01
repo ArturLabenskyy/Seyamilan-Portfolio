@@ -11,9 +11,7 @@ const ServiceCard = ({ content }) => {
     return (
         <Wrapped>
             <h1>{content.name}</h1>
-            <h3>
-                <span>Включает</span> {content.description}
-            </h3>
+            <h3>{content.description}</h3>
             <h2>{content.price}</h2>
             <div className="img-container">
                 <Swiper
@@ -23,11 +21,29 @@ const ServiceCard = ({ content }) => {
                     className="swiper-image"
                     slidesPerView={1}
                 >
-                    {content.images.map((image, index) => (
-                        <SwiperSlide className="swiper-slide" key={index}>
-                            <img src={image} alt={`seviceImage${index}`} />
-                        </SwiperSlide>
-                    ))}
+                    {content.isVideo
+                        ? content.videos.map((video, index) => (
+                              <SwiperSlide className="swiper-slide" key={index}>
+                                  <video
+                                      //   width="300px"
+                                      //   height="800px"
+                                      loop
+                                      muted
+                                      autoPlay
+                                  >
+                                      <source src={video} type="video/mp4" />
+                                      Ваш браузер не поддерживает видео.
+                                  </video>
+                              </SwiperSlide>
+                          ))
+                        : content.images.map((image, index) => (
+                              <SwiperSlide className="swiper-slide" key={index}>
+                                  <img
+                                      src={image}
+                                      alt={`seviceImage${index}`}
+                                  />
+                              </SwiperSlide>
+                          ))}
                 </Swiper>
             </div>
         </Wrapped>

@@ -5,7 +5,7 @@ import Wrapped from "../SideMenu/SideMenu.styled";
 import { useGlobalContext } from "../../context/globalContext";
 
 const SideMenu = () => {
-    const { isMenuOpen } = useGlobalContext();
+    const { isMenuOpen, toggleMenu } = useGlobalContext();
     const navigate = useNavigate();
 
     return (
@@ -14,6 +14,7 @@ const SideMenu = () => {
                 <li
                     onClick={() => {
                         navigate("/about");
+                        toggleMenu();
                     }}
                 >
                     Обо Мне
@@ -21,6 +22,7 @@ const SideMenu = () => {
                 <li
                     onClick={() => {
                         navigate("/services");
+                        toggleMenu();
                     }}
                 >
                     Услуги
@@ -28,6 +30,7 @@ const SideMenu = () => {
                 <li
                     onClick={() => {
                         navigate("/contacts");
+                        toggleMenu();
                     }}
                 >
                     Контакты

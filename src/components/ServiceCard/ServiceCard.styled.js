@@ -14,8 +14,9 @@ const Wrapped = styled.div`
             margin: 1rem;
         }
 
-        h1 {
-            color: #8acefd;
+        h1,
+        h3 {
+            color: #e6e0de;
             font-size: 2rem;
             /* border-bottom: 1px solid var(--color-secondary); */
         }
@@ -30,7 +31,7 @@ const Wrapped = styled.div`
 
         span,
         h2 {
-            color: var(--color-secondary);
+            color: #8ac4cf;
         }
 
         .img-container {
@@ -42,12 +43,14 @@ const Wrapped = styled.div`
         }
 
         img,
-        .swiper-image {
+        .swiper-image,
+        video {
             height: 100%;
             width: 95%;
         }
 
-        img {
+        img,
+        video {
             border: 1px solid var(--color-font);
         }
     }
