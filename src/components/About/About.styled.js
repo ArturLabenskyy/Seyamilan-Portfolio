@@ -5,6 +5,14 @@ import bg from "../../assets/media/about.jpg";
 const Wrapped = styled.div`
     background: url(${bg});
     background-size: 100% 100%;
+    font-family: var(--font-ru);
+    padding: 1rem;
+
+    h1 {
+        margin: 0;
+        color: #2c3d4a;
+    }
+
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         height: 85%;
