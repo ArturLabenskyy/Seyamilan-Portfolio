@@ -12,7 +12,7 @@ const Wrapped = styled.div`
     font-family: var(--font-en);
     color: var(--color-font);
     padding-left: 0.7rem;
-    margin-bottom: 0;
+    margin-bottom: 0.2rem;
 
     .nav-menu {
         width: 30rem;

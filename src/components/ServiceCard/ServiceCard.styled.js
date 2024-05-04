@@ -45,7 +45,7 @@ const Wrapped = styled.div`
         img,
         .swiper-image,
         video {
-            height: 100%;
+            height: 95%;
             width: 95%;
         }
 
