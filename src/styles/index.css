@@ -20,8 +20,13 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
 .full-page {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-bg);
 }
 
