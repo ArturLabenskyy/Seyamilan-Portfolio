@@ -4,7 +4,7 @@ const Wrapped = styled.div`
     box-sizing: border-box;
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-        height: 87.9%;
+        height: 86.9%;
         width: 100%;
         display: flex;
         flex-direction: row;

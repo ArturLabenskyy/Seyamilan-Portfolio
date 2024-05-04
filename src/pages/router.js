@@ -5,6 +5,7 @@ import ServicePage from "./service.page";
 import ContactPage from "./contact.page";
 import DesignPage from "./design.page";
 import ShootingPage from "./shooting.page";
+import AboutPage from "./about.page";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
     {
         path: "/services/shooting",
         element: <ShootingPage />,
+    },
+    {
+        path: "/about",
+        element: <AboutPage />,
     },
 ]);
 

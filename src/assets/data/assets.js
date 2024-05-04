@@ -15,51 +15,51 @@ const items = [
             </video>
         ),
     },
-    {
-        isVideo: false,
-        content: (
-            <img
-                src={img1}
-                onDragStart={handleDragStart}
-                role="presentation"
-                className="photo-slide"
-                alt="image1"
-            />
-        ),
-        header: "Header",
-        description: "description",
-        link: "some link",
-    },
-    {
-        isVideo: false,
-        content: (
-            <img
-                src={img2}
-                onDragStart={handleDragStart}
-                role="presentation"
-                className="photo-slide"
-                alt="image2"
-            />
-        ),
-        header: "Header",
-        description: "description",
-        link: "some link",
-    },
-    {
-        isVideo: false,
-        content: (
-            <img
-                src={img3}
-                onDragStart={handleDragStart}
-                role="presentation"
-                className="photo-slide"
-                alt="image3"
-            />
-        ),
-        header: "Header",
-        description: "description",
-        link: "some link",
-    },
+    // {
+    //     isVideo: false,
+    //     content: (
+    //         <img
+    //             src={img1}
+    //             onDragStart={handleDragStart}
+    //             role="presentation"
+    //             className="photo-slide"
+    //             alt="image1"
+    //         />
+    //     ),
+    //     header: "Header",
+    //     description: "description",
+    //     link: "some link",
+    // },
+    // {
+    //     isVideo: false,
+    //     content: (
+    //         <img
+    //             src={img2}
+    //             onDragStart={handleDragStart}
+    //             role="presentation"
+    //             className="photo-slide"
+    //             alt="image2"
+    //         />
+    //     ),
+    //     header: "Header",
+    //     description: "description",
+    //     link: "some link",
+    // },
+    // {
+    //     isVideo: false,
+    //     content: (
+    //         <img
+    //             src={img3}
+    //             onDragStart={handleDragStart}
+    //             role="presentation"
+    //             className="photo-slide"
+    //             alt="image3"
+    //         />
+    //     ),
+    //     header: "Header",
+    //     description: "description",
+    //     link: "some link",
+    // },
 ];
 
 export default items;
