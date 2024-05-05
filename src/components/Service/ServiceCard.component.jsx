@@ -5,8 +5,8 @@ import Wrapped from "./ServiceCard.styled";
 import { GiClick } from "react-icons/gi";
 
 const ServiceCard = () => {
-    const [leftContent, setLeftContent] = useState(false);
-    const [rightContent, setRightContent] = useState(false);
+    const [leftContent, setLeftContent] = useState(true);
+    const [rightContent, setRightContent] = useState(true);
 
     const navigate = useNavigate();
 

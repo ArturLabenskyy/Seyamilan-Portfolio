@@ -45,6 +45,7 @@ const Wrapped = styled.div`
         h1 {
             height: 10%;
             margin: 1.6rem;
+            font-size: 150%;
             color: var(--font-main);
             text-align: center;
         }
