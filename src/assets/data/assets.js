@@ -5,7 +5,7 @@ const items = [
         isVideo: true,
         content: (
             <video width="300px" height="800px" loop muted autoPlay>
-                <source src={vid} type="video/mp4" />
+                <source src={vid} type="video/webm" />
                 Ваш браузер не поддерживает видео.
             </video>
         ),

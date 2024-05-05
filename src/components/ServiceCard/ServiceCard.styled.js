@@ -3,6 +3,10 @@ import styled from "styled-components";
 const Wrapped = styled.div`
     width: 100%;
     height: 85%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
     font-family: var(--font-ru);
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -36,7 +40,7 @@ const Wrapped = styled.div`
         }
 
         .img-container {
-            height: 30rem;
+            height: auto;
             display: flex;
             flex-direction: row;
             align-items: center;
