@@ -24,7 +24,8 @@ const Wrapped = styled.div`
         }
 
         video {
-            height: 100%;
+            height: 80%;
+            width: 90%;
         }
     }
     // iPad + Tablet screen

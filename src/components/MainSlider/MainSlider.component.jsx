@@ -10,41 +10,19 @@ import vid from "../../assets/media/clip.mp4";
 
 const MainSlider = () => {
     return (
-        <Wrapped>
-            {/* <Swiper spaceBetween={10} slidesPerView={1} className="swiper">
-    {items.map((item, index) => {
-        return (
-            <SwiperSlide key={index}>
-                <SlideCard item={item} key={index} />
-            </SwiperSlide>
-        );
-    })}
-    </Swiper> */}
-            {/* <video
-                width="300px"
-                height="800px"
-                autoPlay={true}
-                loop={true}
-                controls={false}
-                muted
-            >
-                <source src={vid} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video> */}
-            <div
-                dangerouslySetInnerHTML={{
-                    __html: `
-        <video
-          loop
-          muted
-          autoplay
-          playsinline
-          src="${vid}"
-        />,
-      `,
-                }}
-            ></div>
-        </Wrapped>
+        <Wrapped
+            dangerouslySetInnerHTML={{
+                __html: `
+<video
+  loop
+  muted
+  autoplay
+  playsinline
+  src="${vid}"
+/>,
+`,
+            }}
+        ></Wrapped>
     );
 };
 
