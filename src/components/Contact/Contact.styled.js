@@ -23,7 +23,7 @@ const Wrapped = styled.div`
         }
 
         img {
-            width: 60%;
+            width: 50%;
             height: 60%;
         }
 
@@ -44,7 +44,7 @@ const Wrapped = styled.div`
 
         h1 {
             height: 10%;
-            margin: 1rem;
+            margin: 1.6rem;
             color: var(--font-main);
             text-align: center;
         }
