@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <Wrapped>
             <Link to="https://t.me/seyamilan" className="container">
-                <h1>
+                <h1 className="h1-tg">
                     @seyamilan <FaTelegram className="tg-icon" />
                 </h1>
                 <img src={tg} alt="qr-code" className="tg-img" />
@@ -19,7 +19,7 @@ const Contact = () => {
                 to="https://www.instagram.com/seyamilan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 className="container"
             >
-                <h1>
+                <h1 className="h1-ig">
                     @seyamilan <FaInstagram className="ig-icon" />
                 </h1>
                 <img src={ig} alt="qr-code" className="ig-img" />

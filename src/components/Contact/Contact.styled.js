@@ -4,11 +4,11 @@ const Wrapped = styled.div`
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         width: 100%;
-        height: 100%;
+        height: 85%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         font-family: var(--font-main);
 
         .container {
@@ -32,17 +32,19 @@ const Wrapped = styled.div`
             vertical-align: middle;
         }
 
-        .tg-icon {
+        .tg-icon,
+        .h1-tg {
             color: #0b6bb6;
         }
 
-        .ig-icon {
+        .ig-icon,
+        .h1-ig {
             color: #c13584;
         }
 
         h1 {
             height: 10%;
-            margin: 0.5rem;
+            margin: 1rem;
             color: var(--font-main);
             text-align: center;
         }
