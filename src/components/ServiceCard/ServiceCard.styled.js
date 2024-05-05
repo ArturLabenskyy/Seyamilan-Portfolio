@@ -51,7 +51,7 @@ const Wrapped = styled.div`
         .swiper-image,
         video {
             height: auto;
-            max-height: 300px;
+            max-height: 350px;
             width: 80%;
         }
 
