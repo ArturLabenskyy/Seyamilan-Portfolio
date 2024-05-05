@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 
@@ -9,14 +9,6 @@ import Wrapped from "./mainSlider.styled";
 import vid from "../../assets/media/clip.mp4";
 
 const MainSlider = () => {
-    const videoRef = useRef(null);
-
-    const playVideo = () => {
-        if (videoRef.current) {
-            videoRef.current.play();
-        }
-    };
-
     return (
         <Wrapped>
             {/* <Swiper spaceBetween={10} slidesPerView={1} className="swiper">
@@ -29,14 +21,12 @@ const MainSlider = () => {
     })}
     </Swiper> */}
             <video
-                ref={videoRef}
-                // onClick={playVideo}
-                onLoadedMetadata={playVideo}
                 width="300px"
                 height="800px"
-                loop
+                autoPlay={true}
+                loop={true}
+                controls={false}
                 muted
-                autoPlay
             >
                 <source src={vid} type="video/mp4" />
                 Your browser does not support the video tag.
