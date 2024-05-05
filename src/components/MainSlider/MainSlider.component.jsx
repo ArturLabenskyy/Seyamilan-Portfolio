@@ -30,7 +30,8 @@ const MainSlider = () => {
     </Swiper> */}
             <video
                 ref={videoRef}
-                onClick={playVideo}
+                // onClick={playVideo}
+                onLoadedMetadata={playVideo}
                 width="300px"
                 height="800px"
                 loop

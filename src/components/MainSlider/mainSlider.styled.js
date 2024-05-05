@@ -22,6 +22,10 @@ const Wrapped = styled.div`
             align-items: center;
             justify-content: center;
         }
+
+        video {
+            height: 100%;
+        }
     }
     // iPad + Tablet screen
     @media only screen and (min-width: 481px) and (max-width: 768px) {
