@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Wrapped = styled.div`
-    display: flex;
+    /* display: flex; */
+    display: ${(props) => (props.isLargeScreen ? "none" : "flex")};
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -48,10 +49,12 @@ const Wrapped = styled.div`
 
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
+        display: ${(props) => (props.isLargeScreen ? "none" : "flex")};
         z-index: 999;
     }
     // iPad + Tablet screen
     @media only screen and (min-width: 481px) and (max-width: 768px) {
+        display: ${(props) => (props.isLargeScreen ? "flex" : "none")};
     }
 
     // Small screen + Laptop screen

@@ -60,6 +60,12 @@ const Wrapped = styled.div`
         video {
             border: 1px solid var(--color-font);
         }
+
+        .description-img {
+            border: none;
+            max-height: 35%;
+            width: 80%;
+        }
     }
 
     // iPad + Tablet screen

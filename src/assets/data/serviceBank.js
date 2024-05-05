@@ -37,6 +37,8 @@ import d5 from "../media/design/d5.jpg";
 import d6 from "../media/design/d6.jpg";
 import d7 from "../media/design/d7.jpg";
 
+import dis1 from "../media/description/dis1.jpg";
+
 export const shootingBank = [
     {
         name: `ИНДИВИДУАЛЬНАЯ ФОТОСЕССИЯ`,
@@ -44,6 +46,7 @@ export const shootingBank = [
         price: `800₪ за 1 час.`,
         images: [p1, p2, p3, p4, p5, p6, p7],
         videos: [],
+        descriptionImg: dis1,
         isVideo: false,
     },
     {

@@ -10,9 +10,14 @@ import Wrapped from "./ServiceCard.styled";
 const ServiceCard = ({ content }) => {
     return (
         <Wrapped>
-            <h1>{content.name}</h1>
+            {/* <h1>{content.name}</h1>
             <h3>{content.description}</h3>
-            <h2>{content.price}</h2>
+            <h2>{content.price}</h2> */}
+            <img
+                src={content.descriptionImg}
+                alt={`serviceImage`}
+                className="description-img"
+            />
             <div className="img-container">
                 <Swiper
                     direction={"horizontal"}
@@ -31,7 +36,7 @@ const ServiceCard = ({ content }) => {
                               <SwiperSlide className="swiper-slide" key={index}>
                                   <img
                                       src={image}
-                                      alt={`seviceImage${index}`}
+                                      alt={`serviceImage${index}`}
                                   />
                               </SwiperSlide>
                           ))}
