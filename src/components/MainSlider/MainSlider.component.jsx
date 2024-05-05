@@ -20,7 +20,7 @@ const MainSlider = () => {
         );
     })}
     </Swiper> */}
-            <video
+            {/* <video
                 width="300px"
                 height="800px"
                 autoPlay={true}
@@ -30,7 +30,20 @@ const MainSlider = () => {
             >
                 <source src={vid} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
+            </video> */}
+            <div
+                dangerouslySetInnerHTML={{
+                    __html: `
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          src="${vid}"
+        />,
+      `,
+                }}
+            ></div>
         </Wrapped>
     );
 };
