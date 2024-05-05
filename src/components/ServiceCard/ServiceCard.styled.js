@@ -27,7 +27,7 @@ const Wrapped = styled.div`
         }
 
         h2 {
-            font-size: 1.7rem;
+            font-size: 1.25rem;
         }
 
         h3 {
@@ -50,8 +50,8 @@ const Wrapped = styled.div`
         img,
         .swiper-image,
         video {
-            height: 85%;
-            width: 75%;
+            height: auto;
+            width: 80%;
         }
 
         img,
