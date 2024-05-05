@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const Wrapped = styled.footer`
-    height: 6%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

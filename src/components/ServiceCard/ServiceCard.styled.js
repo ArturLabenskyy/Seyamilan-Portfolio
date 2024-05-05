@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Wrapped = styled.div`
     width: 100%;
+    height: 85%;
     font-family: var(--font-ru);
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -17,7 +18,7 @@ const Wrapped = styled.div`
         h1,
         h3 {
             color: #e6e0de;
-            font-size: 2rem;
+            font-size: 1.5rem;
             /* border-bottom: 1px solid var(--color-secondary); */
         }
 
@@ -45,8 +46,8 @@ const Wrapped = styled.div`
         img,
         .swiper-image,
         video {
-            height: 95%;
-            width: 95%;
+            height: 85%;
+            width: 75%;
         }
 
         img,

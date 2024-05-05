@@ -1,4 +1,4 @@
-import vid from "../media/clip.mp4";
+import vid from "../media/clip.webm";
 
 const items = [
     {
