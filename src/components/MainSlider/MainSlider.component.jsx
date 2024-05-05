@@ -20,14 +20,14 @@ const MainSlider = () => {
     return (
         <Wrapped>
             {/* <Swiper spaceBetween={10} slidesPerView={1} className="swiper">
-                {items.map((item, index) => {
-                    return (
-                        <SwiperSlide key={index}>
-                            <SlideCard item={item} key={index} />
-                        </SwiperSlide>
-                    );
-                })}
-            </Swiper> */}
+    {items.map((item, index) => {
+        return (
+            <SwiperSlide key={index}>
+                <SlideCard item={item} key={index} />
+            </SwiperSlide>
+        );
+    })}
+    </Swiper> */}
             <video
                 ref={videoRef}
                 onClick={playVideo}
