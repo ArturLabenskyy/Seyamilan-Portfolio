@@ -11,14 +11,14 @@ const SideMenu = () => {
     return (
         <Wrapped isopen={isMenuOpen}>
             <ul className={isMenuOpen ? "list-visible" : "list-hidden"}>
-                <li
+                {/* <li
                     onClick={() => {
                         navigate("/about");
                         toggleMenu();
                     }}
                 >
                     Обо Мне
-                </li>
+                </li> */}
                 <li
                     onClick={() => {
                         navigate("/services");
