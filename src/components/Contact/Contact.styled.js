@@ -12,8 +12,8 @@ const Wrapped = styled.div`
         font-family: var(--font-main);
 
         .container {
-            width: 80%;
-            height: 40%;
+            width: 70%;
+            height: 30%;
             display: flex;
             flex-direction: column;
             align-items: center;
