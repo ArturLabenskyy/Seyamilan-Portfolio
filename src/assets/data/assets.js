@@ -1,3 +1,5 @@
+import React from "react";
+
 import vid from "../media/clip.webm";
 
 const items = [
