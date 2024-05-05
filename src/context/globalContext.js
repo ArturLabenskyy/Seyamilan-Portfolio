@@ -3,7 +3,7 @@ import { useState, createContext, useContext } from "react";
 const GlobalContext = createContext();
 
 export const ContextProvider = ({ children }) => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(true);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);

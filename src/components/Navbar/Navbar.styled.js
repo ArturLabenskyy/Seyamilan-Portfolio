@@ -8,7 +8,7 @@ const Wrapped = styled.div`
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-bg);
-    border-bottom: 1px solid var(--color-secondary);
+    border-bottom: 1px solid var(--color-font);
     font-family: var(--font-en);
     color: var(--color-font);
     padding-left: 0.7rem;

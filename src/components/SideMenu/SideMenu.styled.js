@@ -9,7 +9,7 @@ const Wrapped = styled.div`
     width: 100%;
     height: 92.9%;
     background-color: var(--color-bg);
-    opacity: 0.9;
+    opacity: 0.6;
     transition: left 0.3s ease;
 
     ul {
@@ -31,7 +31,7 @@ const Wrapped = styled.div`
         text-align: center;
         align-self: center;
         width: 100%;
-        border-bottom: solid 1px var(--color-secondary);
+        border-bottom: solid 1px var(--color-font);
     }
 
     .list-visible {

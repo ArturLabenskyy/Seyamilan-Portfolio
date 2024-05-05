@@ -3,11 +3,12 @@ import styled from "styled-components";
 const Wrapped = styled.div`
     width: 100%;
     height: 85%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     font-family: var(--font-ru);
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: var(--color-font);
+    }
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         color: var(--color-font);
