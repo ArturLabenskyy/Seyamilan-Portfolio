@@ -29,6 +29,11 @@ import e6 from "../media/event_photoshoot/6.jpg";
 import e7 from "../media/event_photoshoot/7.jpg";
 import e8 from "../media/event_photoshoot/8.jpg";
 
+import gif1 from "../media/design/d1.gif";
+import gif2 from "../media/design/d2.gif";
+import gif3 from "../media/design/d3.gif";
+import gif4 from "../media/design/d4.gif";
+
 const galleryPhotoBank = [
     {
         src: p1,
@@ -162,6 +167,26 @@ const galleryPhotoBank = [
     },
     {
         src: e8,
+        height: 800,
+        width: 600,
+    },
+    {
+        src: gif1,
+        height: 800,
+        width: 600,
+    },
+    {
+        src: gif2,
+        height: 800,
+        width: 600,
+    },
+    {
+        src: gif3,
+        height: 800,
+        width: 600,
+    },
+    {
+        src: gif4,
         height: 800,
         width: 600,
     },
