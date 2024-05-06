@@ -87,14 +87,29 @@ const Wrapped = styled.div`
     }
 
     .click-icon {
+        width: 5rem;
+        height: 2.5rem;
         margin: auto;
         color: var(--color-font);
         text-shadow: 2px 2px var(--color-secondary);
+        animation: pulse 1s infinite;
     }
 
     .click-icon:hover {
         color: #08f9f7;
         transition: color 1s ease;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 
     // Mobile phone screen

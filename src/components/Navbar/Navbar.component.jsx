@@ -52,9 +52,27 @@ const Navbar = () => {
             ) : (
                 <div className="nav-menu">
                     <ul>
-                        <li>Услуги</li>
-                        <li>Галерея</li>
-                        <li>Контакты</li>
+                        <li
+                            onClick={() => {
+                                navigate("/services");
+                            }}
+                        >
+                            Услуги
+                        </li>
+                        <li
+                            onClick={() => {
+                                navigate("/gallery");
+                            }}
+                        >
+                            Галерея
+                        </li>
+                        <li
+                            onClick={() => {
+                                navigate("/contacts");
+                            }}
+                        >
+                            Контакты
+                        </li>
                     </ul>
                 </div>
             )}
