@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapped = styled.div`
-    height: 86.9%;
+    height: 85%;
     width: 100%;
     display: flex;
     flex-direction: row;
