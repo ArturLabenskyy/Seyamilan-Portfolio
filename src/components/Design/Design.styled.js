@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import designImg from "../../assets/media/designImg.jpg";
 
 const Wrapped = styled.div`
     // Mobile phone screen
