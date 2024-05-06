@@ -44,6 +44,14 @@ const SideMenu = () => {
                 </li>
                 <li
                     onClick={() => {
+                        navigate("/gallery");
+                        toggleMenu();
+                    }}
+                >
+                    Галерея
+                </li>
+                <li
+                    onClick={() => {
                         navigate("/contacts");
                         toggleMenu();
                     }}
