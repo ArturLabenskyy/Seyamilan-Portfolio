@@ -2,8 +2,6 @@ import React from "react";
 
 import Wrapped from "./Service.styled";
 
-// import designImg from "../../assets/media/designImg.jpg";
-
 const Service = ({ serviceImg }) => {
     return (
         <Wrapped>

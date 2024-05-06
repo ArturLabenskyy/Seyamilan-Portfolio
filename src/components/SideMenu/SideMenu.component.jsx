@@ -26,14 +26,6 @@ const SideMenu = () => {
     return (
         <Wrapped isopen={isMenuOpen} isLargeScreen={isLargeScreen}>
             <ul className={isMenuOpen ? "list-visible" : "list-hidden"}>
-                {/* <li
-                    onClick={() => {
-                        navigate("/about");
-                        toggleMenu();
-                    }}
-                >
-                    Обо Мне
-                </li> */}
                 <li
                     onClick={() => {
                         navigate("/services");

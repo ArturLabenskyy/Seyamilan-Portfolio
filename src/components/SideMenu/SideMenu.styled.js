@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Wrapped = styled.div`
-    /* display: flex; */
     display: ${(props) => (props.isLargeScreen ? "none" : "flex")};
     align-items: center;
     justify-content: center;

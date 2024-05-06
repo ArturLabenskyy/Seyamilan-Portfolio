@@ -50,10 +50,6 @@ const Wrapped = styled.footer`
             flex-direction: column;
             gap: 1rem;
         }
-
-        /* .footer-socials {
-            margin-bottom: 10px;
-        } */
     }
 
     // iPad + Tablet screen

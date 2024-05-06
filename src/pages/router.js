@@ -6,7 +6,6 @@ import ContactPage from "./contact.page";
 import DesignPage from "./design.page";
 import ShootingPage from "./shooting.page";
 import GalleryPage from "./gallery.page";
-// import AboutPage from "./about.page";
 
 const router = createBrowserRouter([
     {
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
         path: "/gallery",
         element: <GalleryPage />,
     },
-    // {
-    //     path: "/about",
-    //     element: <AboutPage />,
-    // },
 ]);
 
 export default router;
