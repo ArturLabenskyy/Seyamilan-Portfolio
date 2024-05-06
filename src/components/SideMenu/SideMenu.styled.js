@@ -11,6 +11,7 @@ const Wrapped = styled.div`
     background-color: var(--color-bg);
     opacity: 0.6;
     transition: left 0.3s ease;
+    z-index: 999;
 
     ul {
         width: 60%;

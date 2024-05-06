@@ -54,6 +54,7 @@ const Wrapped = styled.footer`
 
     // iPad + Tablet screen
     @media only screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 1.3rem;
     }
 
     // Small screen + Laptop screen

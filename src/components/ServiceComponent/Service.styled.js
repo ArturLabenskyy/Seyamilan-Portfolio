@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 const Wrapped = styled.div`
+    width: 100%;
+    height: 86%;
+    overflow: auto;
+    background-color: var(--color-bg);
+
+    .design-img {
+        width: 100%;
+    }
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         width: 100%;

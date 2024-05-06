@@ -28,7 +28,7 @@ const Wrapped = styled.div`
 
     .nav-menu ul li {
         font: 25px bold;
-        font-family: var(--font-en);
+        font-family: var(--font-ru);
     }
 
     h3 {
@@ -56,7 +56,7 @@ const Wrapped = styled.div`
     // iPad + Tablet screen
     @media only screen and (min-width: 481px) and (max-width: 768px) {
         h3 {
-            font-size: 17px;
+            font-size: 1.4rem;
         }
 
         .nav-menu {
@@ -73,7 +73,13 @@ const Wrapped = styled.div`
 
     // Small screen + Laptop screen
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
-        height: 20vh;
+        h3 {
+            font-size: 1.1rem;
+        }
+
+        .nav-menu ul li {
+            font: 20px bold var(--font-ru);
+        }
     }
 
     //  Desktops + large screen FullHD

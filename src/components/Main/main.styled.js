@@ -1,6 +1,29 @@
 import styled from "styled-components";
 
 const Wrapped = styled.div`
+    height: 86.9%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        color: #f3f3f3;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    video {
+        height: 80%;
+        width: 90%;
+    }
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         height: 86.9%;
@@ -37,18 +60,6 @@ const Wrapped = styled.div`
 
     //  Desktops + large screen
     @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-        height: 100%;
-        width: 100%;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--color-bg);
-
-        video {
-            height: 95%;
-            width: 60%;
-        }
     }
 
     // Extra large + TV screen

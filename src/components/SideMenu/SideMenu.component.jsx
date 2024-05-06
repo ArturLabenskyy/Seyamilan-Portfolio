@@ -6,13 +6,12 @@ import { useGlobalContext } from "../../context/globalContext";
 
 const SideMenu = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(false);
-
     const { isMenuOpen, toggleMenu } = useGlobalContext();
     const navigate = useNavigate();
 
     useEffect(() => {
         const handleResize = () => {
-            setIsLargeScreen(window.innerWidth > 768); // Измените значение 768 на свое желаемое значение порога ширины экрана
+            setIsLargeScreen(window.innerWidth >= 768); // Измените значение 768 на свое желаемое значение порога ширины экрана
         };
 
         window.addEventListener("resize", handleResize);
