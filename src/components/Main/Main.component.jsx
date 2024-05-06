@@ -2,7 +2,7 @@ import React from "react";
 
 import vid from "../../assets/media/clip.mp4";
 
-import Wrapped from "./Main.styled";
+import Wrapped from "./main.styled";
 
 const Main = () => {
     return (
