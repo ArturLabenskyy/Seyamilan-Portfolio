@@ -32,7 +32,13 @@ const ServiceCard = () => {
                         leftContent ? "content-visible" : "content-hidden"
                     }
                 >
-                    <h1>ДИЗАЙН</h1>
+                    <h1
+                        onClick={() => {
+                            navigate("/services/design");
+                        }}
+                    >
+                        ДИЗАЙН
+                    </h1>
                     <a
                         href="#design"
                         onClick={() => {
@@ -53,7 +59,13 @@ const ServiceCard = () => {
                         rightContent ? "content-visible" : "content-hidden"
                     }
                 >
-                    <h1>СЪЕМКА</h1>
+                    <h1
+                        onClick={() => {
+                            navigate("/services/shooting");
+                        }}
+                    >
+                        СЪЕМКА
+                    </h1>
                     <a
                         href="#shooting"
                         onClick={() => {
