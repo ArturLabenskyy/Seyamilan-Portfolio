@@ -38,6 +38,7 @@ import d6 from "../media/design/d6.jpg";
 import d7 from "../media/design/d7.jpg";
 
 import dis1 from "../media/description/dis1.jpg";
+import dis2 from "../media/description/dis2.jpg";
 
 export const shootingBank = [
     {
@@ -71,6 +72,7 @@ export const shootingBank = [
         price: `1000₪ за 2 часа. Каждый дополнительный час 300 ₪.`,
         images: [e1, e2, e3, e4, e5, e6, e7, e8],
         videos: [],
+        descriptionImg: dis2,
         isVideo: false,
     },
 ];

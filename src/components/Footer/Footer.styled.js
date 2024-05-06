@@ -1,10 +1,11 @@
 import styled from "styled-components";
 const Wrapped = styled.footer`
     height: auto;
+    padding: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     background: var(--color-bg);
     text-align: center;
     font-size: 1rem;
