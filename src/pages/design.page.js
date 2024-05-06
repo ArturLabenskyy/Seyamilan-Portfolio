@@ -3,7 +3,9 @@ import Navbar from "../components/Navbar/Navbar.component";
 import SideMenu from "../components/SideMenu/SideMenu.component";
 // import ServiceSlider from "../components/ServiceSlider/ServiceSlider.component";
 import Footer from "../components/Footer/Footer.component";
-import Design from "../components/Design/Design.component";
+import Service from "../components/ServiceComponent/Service.component";
+
+import designImg from "../assets/media/designImg.jpg";
 
 // import { designBank } from "../assets/data/serviceBank";
 
@@ -12,7 +14,7 @@ const DesignPage = () => {
         <div className="full-page">
             <Navbar />
             <SideMenu />
-            <Design />
+            <Service serviceImg={designImg} />
             {/* <ServiceSlider content={designBank} /> */}
             <Footer />
         </div>
