@@ -52,10 +52,9 @@ const Navbar = () => {
             ) : (
                 <div className="nav-menu">
                     <ul>
-                        <li>About</li>
-                        <li>Photo</li>
-                        <li>Video</li>
-                        <li>Contact</li>
+                        <li>Услуги</li>
+                        <li>Галерея</li>
+                        <li>Контакты</li>
                     </ul>
                 </div>
             )}

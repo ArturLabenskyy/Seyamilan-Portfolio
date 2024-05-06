@@ -73,14 +73,15 @@ const Wrapped = styled.div`
 
     // Small screen + Laptop screen
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        height: 20vh;
     }
 
-    //  Desktops + large screen
-    @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    //  Desktops + large screen FullHD
+    @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     }
 
-    // Extra large + TV screen
-    @media only screen and (min-width: 1201px) {
+    // Extra large + TV screen 2K + 4K
+    @media only screen and (min-width: 1921px) {
     }
 `;
 

@@ -39,6 +39,10 @@
 
 /* // iPad + Tablet screen */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .full-page {
+        height: 100svh;
+        background-color: var(--color-bg);
+    }
 }
 
 /* // Small screen + Laptop screen */
@@ -46,9 +50,19 @@
 }
 
 /* //  Desktops + large screen */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+    .full-page {
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--color-bg);
+    }
 }
 
 /* // Extra large + TV screen */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1921px) {
+    .full-page {
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--color-bg);
+    }
 }

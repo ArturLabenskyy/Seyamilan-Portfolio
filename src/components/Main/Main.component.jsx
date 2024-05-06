@@ -9,14 +9,14 @@ const Main = () => {
         <Wrapped
             dangerouslySetInnerHTML={{
                 __html: `
-<video
-  loop
-  muted
-  autoplay
-  playsinline
-  src="${vid}"
-/>,
-`,
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          src="${vid}"
+        />,
+        `,
             }}
         ></Wrapped>
     );
