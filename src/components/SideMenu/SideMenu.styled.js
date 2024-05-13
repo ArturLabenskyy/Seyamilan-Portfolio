@@ -47,6 +47,13 @@ const Wrapped = styled.div`
         transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     }
 
+    a {
+        text-decoration: none;
+        font-family: var(--font-ru);
+        color: var(--color-font);
+        font-size: 1.6rem;
+    }
+
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         display: ${(props) => (props.isLargeScreen ? "none" : "flex")};

@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import Wrapped from "../SideMenu/SideMenu.styled";
 import { useGlobalContext } from "../../context/globalContext";
 
+import guide from "../../assets/media/midjourney_guide.pdf";
+
 const SideMenu = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(false);
     const { isMenuOpen, toggleMenu } = useGlobalContext();
@@ -49,13 +51,15 @@ const SideMenu = () => {
                 >
                     Контакты
                 </li>
-                <li
-                    onClick={() => {
-                        navigate("/guide");
-                        toggleMenu();
-                    }}
-                >
-                    Инструкция по MidJourney
+                <li>
+                    <a
+                        href={guide}
+                        className="guide"
+                        rel="noreferrer"
+                        target="_blank"
+                    >
+                        Инструкция по MidJourney
+                    </a>
                 </li>
             </ul>
         </Wrapped>
