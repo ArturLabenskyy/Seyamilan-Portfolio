@@ -9,7 +9,11 @@ import ig from "../../assets/media/ig.png";
 const Contact = () => {
     return (
         <Wrapped>
-            <Link to="https://t.me/seyamilan" className="container">
+            <Link
+                to="https://t.me/seyamilan"
+                className="container"
+                target="_blank"
+            >
                 <h1 className="h1-tg">
                     @seyamilan <FaTelegram className="tg-icon" />
                 </h1>
@@ -18,6 +22,7 @@ const Contact = () => {
             <Link
                 to="https://www.instagram.com/seyamilan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 className="container"
+                target="_blank"
             >
                 <h1 className="h1-ig">
                     @seyamilan <FaInstagram className="ig-icon" />

@@ -49,6 +49,14 @@ const SideMenu = () => {
                 >
                     Контакты
                 </li>
+                <li
+                    onClick={() => {
+                        navigate("/guide");
+                        toggleMenu();
+                    }}
+                >
+                    Инструкция по MidJourney
+                </li>
             </ul>
         </Wrapped>
     );
