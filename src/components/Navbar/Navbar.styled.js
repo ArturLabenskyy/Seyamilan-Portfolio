@@ -35,6 +35,11 @@ const Wrapped = styled.div`
         margin: 0;
     }
 
+    h3:hover,
+    :hover {
+        cursor: pointer;
+    }
+
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         h3 {
@@ -88,6 +93,22 @@ const Wrapped = styled.div`
 
     // Extra large + TV screen 2K + 4K
     @media only screen and (min-width: 1921px) {
+        li:hover {
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            width: 30%;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .nav-menu ul li {
+            text-align: center;
+            font-size: 2.5rem;
+        }
     }
 `;
 

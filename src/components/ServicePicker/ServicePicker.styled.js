@@ -46,8 +46,7 @@ const Wrapped = styled.div`
     }
 
     .two:hover {
-        background: url(${img2}) transparent no-repeat bottom center / cover;
-        background-size: cover;
+        background: url(${img2}) no-repeat center center / cover;
     }
 
     .content-visible {
@@ -144,6 +143,34 @@ const Wrapped = styled.div`
     }
     // iPad + Tablet screen
     @media only screen and (min-width: 481px) and (max-width: 768px) {
+    }
+
+    //  Desktops + large screen FullHD
+    @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+        .one:hover,
+        .two:hover {
+            z-index: 500;
+            width: 80%;
+            transition: width 1.5s ease-in-out;
+        }
+    }
+
+    // Extra large + TV screen 2K + 4K
+    @media only screen and (min-width: 1921px) {
+        .one:hover,
+        .two:hover {
+            z-index: 500;
+            width: 70%;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        .click-icon {
+            height: 8rem;
+            width: 4rem;
+        }
     }
 `;
 

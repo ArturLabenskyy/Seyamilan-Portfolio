@@ -62,10 +62,24 @@ const Wrapped = styled.footer`
     }
     //  Desktops + large screen
     @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+        a {
+            font-size: 1.5rem;
+        }
+
+        small {
+            font-size: 1.5rem;
+        }
     }
 
     // Extra large + TV screen
     @media only screen and (min-width: 1201px) {
+        a {
+            font-size: 2rem;
+        }
+
+        small {
+            font-size: 2rem;
+        }
     }
 `;
 

@@ -3,6 +3,10 @@ import styled from "styled-components";
 const Wrapped = styled.div`
     width: 100%;
     height: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
     overflow: auto;
     background-color: var(--color-bg);
 
@@ -31,10 +35,16 @@ const Wrapped = styled.div`
 
     //  Desktops + large screen
     @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+        .design-img {
+            width: 70%;
+        }
     }
 
     // Extra large + TV screen
     @media only screen and (min-width: 1201px) {
+        .design-img {
+            width: 70%;
+        }
     }
 `;
 

@@ -64,6 +64,10 @@ const Wrapped = styled.div`
 
     // Extra large + TV screen
     @media only screen and (min-width: 1921px) {
+        video {
+            width: 80%;
+            height: 90%;
+        }
     }
 `;
 

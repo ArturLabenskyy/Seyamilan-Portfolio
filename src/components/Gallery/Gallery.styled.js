@@ -22,10 +22,25 @@ const Wrapped = styled.div`
 
     //  Desktops + large screen
     @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+        height: 86%;
+        width: 100%;
+        overflow: auto;
+
+        .gallery {
+            height: 100%;
+        }
     }
 
     // Extra large + TV screen
     @media only screen and (min-width: 1201px) {
+        height: 85%;
+        width: 100%;
+        overflow: auto;
+
+        .gallery::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background-color: #d55959;
+        }
     }
 `;
 
