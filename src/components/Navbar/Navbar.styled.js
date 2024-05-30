@@ -29,10 +29,12 @@ const Wrapped = styled.div`
     .nav-menu ul li {
         font: 25px bold;
         font-family: var(--font-ru);
+        transition: color 0.5s ease-in-out;
     }
 
     h3 {
         margin: 0;
+        transition: color 0.5s ease-in-out;
     }
 
     .text-logo:hover {
