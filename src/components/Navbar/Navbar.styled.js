@@ -35,9 +35,16 @@ const Wrapped = styled.div`
         margin: 0;
     }
 
-    h3:hover,
-    :hover {
+    .text-logo:hover {
         cursor: pointer;
+        color: var(--color-secondary);
+        transition: color 0.5s ease-in-out;
+    }
+
+    li:hover {
+        cursor: pointer;
+        color: var(--color-secondary);
+        transition: color 0.5s ease-in-out;
     }
 
     // Mobile phone screen

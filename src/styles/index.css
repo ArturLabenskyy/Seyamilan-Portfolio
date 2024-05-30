@@ -20,6 +20,32 @@
     box-sizing: border-box;
 }
 
+* {
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #bd4830;
+    --sb-size: 14px;
+}
+
+*::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    * {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
 .full-page {
     height: 100vh;
     background-color: var(--color-bg);
