@@ -52,7 +52,7 @@ const Wrapped = styled.div`
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         h3 {
-            font-size: 17px;
+            font-size: 14px;
         }
 
         .nav-menu {

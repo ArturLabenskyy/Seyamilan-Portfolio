@@ -18,6 +18,13 @@ const Wrapped = styled.div`
 
     // Small screen + Laptop screen
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        height: 82%;
+        width: 100%;
+        overflow: auto;
+
+        .gallery {
+            height: 100%;
+        }
     }
 
     //  Desktops + large screen

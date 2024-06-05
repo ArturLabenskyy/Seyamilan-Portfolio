@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapped = styled.div`
     width: 100%;
-    height: 85%;
+    height: 83%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +49,10 @@ const Wrapped = styled.div`
     }
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
+        img {
+            height: 90%;
+            width: 30%;
+        }
     }
 
     // iPad + Tablet screen
@@ -56,16 +60,29 @@ const Wrapped = styled.div`
         .container {
             height: 40%;
         }
+
+        img {
+            height: 90%;
+            width: 30%;
+        }
     }
 
     // Small screen + Laptop screen
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        img {
+            height: 90%;
+            width: 30%;
+        }
     }
 
     //  Desktops + large screen
     @media only screen and (min-width: 1025px) and (max-width: 1200px) {
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
+        }
+        img {
+            height: 90%;
+            width: 30%;
         }
     }
 
