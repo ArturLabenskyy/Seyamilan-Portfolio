@@ -11,7 +11,7 @@ const Wrapped = styled.div`
 
     .container {
         width: 70%;
-        height: 30%;
+        height: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,8 +21,8 @@ const Wrapped = styled.div`
     }
 
     img {
-        width: 50%;
-        height: 60%;
+        width: 10rem;
+        height: 10rem;
     }
 
     .tg-icon,
@@ -50,8 +50,8 @@ const Wrapped = styled.div`
     // Mobile phone screen
     @media only screen and (min-width: 320px) and (max-width: 480px) {
         img {
-            height: 90%;
-            width: 30%;
+            height: 10rem;
+            width: 10rem;
         }
     }
 
@@ -62,16 +62,16 @@ const Wrapped = styled.div`
         }
 
         img {
-            height: 90%;
-            width: 30%;
+            width: 10rem;
+            height: 10rem;
         }
     }
 
     // Small screen + Laptop screen
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
         img {
-            height: 90%;
-            width: 30%;
+            width: 10rem;
+            height: 10rem;
         }
     }
 
@@ -81,8 +81,8 @@ const Wrapped = styled.div`
             font-size: 2rem;
         }
         img {
-            height: 90%;
-            width: 30%;
+            width: 15rem;
+            height: 15rem;
         }
     }
 

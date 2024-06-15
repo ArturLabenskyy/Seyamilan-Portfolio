@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Wrapped = styled.div`
     display: ${(props) => (props.isLargeScreen ? "none" : "flex")};
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -15,6 +16,7 @@ const Wrapped = styled.div`
 
     ul {
         width: 60%;
+        height: 100%;
         margin: 0;
         padding: 0;
         height: 20rem;
@@ -26,16 +28,18 @@ const Wrapped = styled.div`
     }
 
     li {
+        width: 80%;
         font-family: var(--font-ru);
         color: var(--color-font);
         font-size: 30px;
         text-align: center;
         align-self: center;
-        width: 100%;
         border-bottom: solid 1px var(--color-font);
     }
 
     .list-visible {
+        height: 70%;
+        width: 90%;
         opacity: 1;
         transform: translateY(0);
         transition: opacity 2s linear, transform 1s ease-in-out;

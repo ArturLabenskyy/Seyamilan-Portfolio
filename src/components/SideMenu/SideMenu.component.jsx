@@ -5,6 +5,8 @@ import Wrapped from "../SideMenu/SideMenu.styled";
 import { useGlobalContext } from "../../context/globalContext";
 
 import guide from "../../assets/media/midjourney_guide.pdf";
+import clientPrompt from "../../assets/media/clients_prompt.pdf";
+import contentPrompt from "../../assets/media/content_prompt.pdf";
 
 const SideMenu = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -58,7 +60,27 @@ const SideMenu = () => {
                         rel="noreferrer"
                         target="_blank"
                     >
-                        Инструкция по MidJourney
+                        MidJourney
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href={contentPrompt}
+                        className="content"
+                        rel="noreferrer"
+                        target="_blank"
+                    >
+                        КОНТЕНТ-ПЛАН
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href={clientPrompt}
+                        className="clients"
+                        rel="noreferrer"
+                        target="_blank"
+                    >
+                        ЦЕЛЕВАЯ АУДИТОРИЯ
                     </a>
                 </li>
             </ul>

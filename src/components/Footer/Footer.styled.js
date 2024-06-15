@@ -67,7 +67,7 @@ const Wrapped = styled.footer`
         }
 
         small {
-            font-size: 1rem;
+            font-size: 2rem;
         }
     }
 
